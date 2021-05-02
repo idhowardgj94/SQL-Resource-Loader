@@ -33,9 +33,7 @@ public class ObjectMapper implements IMapper {
     }
 
     private String toCamelCase(String s) {
-        return s.transform(it -> {
-            String first = it.substring(0, 1).toUpperCase(Locale.ROOT);
-            return first.concat(it.substring(1));
-        });
+        String first = s.substring(0, 1).toUpperCase(Locale.ROOT);
+        return first.concat(s.substring(1));
     }
 }

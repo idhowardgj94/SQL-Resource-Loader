@@ -1,4 +1,4 @@
-package core.loader.stub;
+package core.util.stub;
 public class TestStub {
     public TestStub() {
     }
